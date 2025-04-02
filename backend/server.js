@@ -17,11 +17,7 @@ const USERS_FILE = "./users.json";
 
 
 // ✅ Apply CORS **before** defining routes
-app.use(cors({
-  origin: "http://localhost:5173", // Allow only your frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
+app.use(cors());
 
 app.use(express.json());
 
