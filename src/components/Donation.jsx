@@ -10,7 +10,7 @@ const Donation = ({ onDonate }) => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/food/${foodName}`, {
+      const response = await fetch(`https://foodalert-xoow.onrender.com/api/food/${foodName}`, {
         method: 'DELETE',
       });
 

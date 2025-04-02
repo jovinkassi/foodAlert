@@ -11,7 +11,7 @@ const FoodList = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:5000/api/food-items')
+    fetch('https://foodalert-xoow.onrender.com/api/food-items')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

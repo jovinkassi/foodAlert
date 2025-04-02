@@ -17,7 +17,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", { email, password });
+      await axios.post("https://foodalert-xoow.onrender.com/api/auth/register", { email, password });
       localStorage.setItem("hasAccount", "true"); // Mark user as registered
       alert("Registration successful! Please login.");
       navigate("/login");
